@@ -1,0 +1,17 @@
+.navbar {
+  background-color: #1a1a1d;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  background-color: #c62e2e;
+}
+
+body {
+  background-color: #eeeeee;
+}
+
+h1 {
+  font-weight: bold;
+  font-family: serif;
+}
