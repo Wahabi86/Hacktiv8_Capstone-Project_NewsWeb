@@ -18,6 +18,6 @@ export const useFetchNews = (query) => {
   return useQuery({
     queryKey: ["news", query],
     queryFn: () => fetchNews(query),
-    staleTime: 5 * 60 * 1000, // untuk menahan fetch api selama 5 menit
+    staleTime: 5 * 60 * 1000, // untuk menahan data selama 5 menit setelah melakukan fethcing api
   });
 };
