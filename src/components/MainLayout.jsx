@@ -5,7 +5,7 @@ import image from "../assets/img.png";
 import PropTypes from "prop-types";
 
 function MainLayout({ query }) {
-  const savedNews = useSelector((state) => state.news.data); //untuk connect ke store
+  const savedNews = useSelector((state) => state.news.data);
   const dispatch = useDispatch();
 
   // mengammbil data berita menggunakan hook
@@ -52,7 +52,7 @@ function MainLayout({ query }) {
               <p className="card-text">{item.abstract || "Not Description"}</p> {/* untuk deskripsinya*/}
               <div className="mt-auto">
                 <a href={item.web_url} target="_blank" rel="noopener noreferrer" className="btn btn-dark">
-                  News Page
+                  Read More
                 </a>
                 <button className={`btn mx-2 ${isSaved(item) ? "btn-danger" : "btn-info text-white"}`} onClick={() => handleSave(item)}>
                   {isSaved(item) ? "Unsave" : "Save"}

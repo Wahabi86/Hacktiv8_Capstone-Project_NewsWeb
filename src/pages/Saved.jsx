@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { unsaveNews } from "../store/newsSaved";
 
 function Saved() {
-  const savedNews = useSelector((state) => state.news.data); //untuk connect ke store
+  const savedNews = useSelector((state) => state.news.data); 
   const dispatch = useDispatch();
 
   const handleDelete = (item) => {
@@ -41,7 +41,7 @@ function Saved() {
                 <td>{item.abstract}</td>
                 <td>
                   <a href={item.web_url} target="_blank">
-                    News Page
+                    Read More
                   </a>
                 </td>
                 <td>
