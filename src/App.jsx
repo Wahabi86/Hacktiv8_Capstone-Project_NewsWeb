@@ -2,7 +2,6 @@ import { createBrowserRouter } from "react-router-dom";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
 import Indonesia from "./pages/Indonesia";
 import Programming from "./pages/Programming";
 import Saved from "./pages/Saved";
@@ -15,10 +14,6 @@ const App = createBrowserRouter([
     children: [
       {
         path: "",
-        element: <Home />,
-      },
-      {
-        path: "/indonesia",
         element: <Indonesia />,
       },
       {

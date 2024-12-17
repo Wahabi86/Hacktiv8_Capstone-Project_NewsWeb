@@ -23,7 +23,7 @@ function MainLayout({ query }) {
 
   if (isLoading) {
     return (
-      <div className="d-flex justify-content-center align-items-center mt-5" style={{ height: "61.7vh" }}>
+      <div className="d-flex justify-content-center align-items-center mt-5" style={{ height: "62vh" }}>
         <div className="spinner-border" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
@@ -33,7 +33,7 @@ function MainLayout({ query }) {
 
   if (isError) {
     return (
-      <div className="d-flex justify-content-center align-items-center mt-5" style={{ height: "61.7vh" }}>
+      <div className="d-flex justify-content-center align-items-center mt-5" style={{ height: "62vh" }}>
         <h1>Error fetching data</h1>
       </div>
     );

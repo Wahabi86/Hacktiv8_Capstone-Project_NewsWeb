@@ -12,7 +12,7 @@ function Saved() {
   };
 
   return (
-    <div style={{ minHeight: "77.2vh" }}>
+    <div style={{ minHeight: "78vh" }}>
       <div className="container">
         <div className="d-flex justify-content-center my-3 text-uppercase">
           <h1>List Saved</h1>

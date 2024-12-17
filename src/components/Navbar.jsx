@@ -17,7 +17,7 @@ function Navbar() {
   return (
     // Navbar
     <>
-      <nav className="navbar sticky-top navbar-expand-lg navbar-dark p-0">
+      <nav className="navbar sticky-top navbar-expand-lg p-0">
         <div className="container">
           <Link className="navbar-brand text-white px-3 mt-2 d-flex align-items-center" to="/">
             <h3>
@@ -31,11 +31,6 @@ function Navbar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0 d-flex flex-row align-items-center">
               <li className="nav-item">
                 <Link className="nav-link text-white px-3 d-flex align-items-center" to="/" style={{ backgroundColor: "#c62e2e", height: "60px" }}>
-                  Home
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link text-white px-2 d-flex align-items-center" to="/indonesia">
                   Indonesia
                 </Link>
               </li>
