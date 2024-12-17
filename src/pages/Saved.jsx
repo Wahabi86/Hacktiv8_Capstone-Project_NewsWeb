@@ -38,7 +38,7 @@ function Saved() {
             {savedNews.map((item) => (
               <tr key={item._id}>
                 <td>{item.headline.main}</td>
-                <td>{item.abstract}</td>
+                <td>{item.abstract ? (item.abstract.length > 500 ? `${item.abstract.slice(0, 100)}...` : item.abstract) : "Not Description"}</td>
                 <td>
                   <a href={item.web_url} target="_blank">
                     Read More

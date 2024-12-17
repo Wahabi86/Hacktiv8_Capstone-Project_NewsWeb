@@ -50,7 +50,7 @@ function MainLayout({ query }) {
               <p className="card-text">
                 <small className="text-muted">{item.byline?.original || "By Unknown"}</small> {/* untuk pembuat*/}
               </p>
-              <p className="card-text">{item.abstract || "Not Description"}</p> {/* untuk deskripsinya*/}
+              <p className="card-text">{item.abstract ? (item.abstract.length > 500 ? `${item.abstract.slice(0, 100)}...` : item.abstract) : "Not Description"}</p> {/* untuk deskripsinya*/}
               <div className="mt-auto">
                 <a href={item.web_url} target="_blank" rel="noopener noreferrer" className="btn btn-dark">
                   Read More

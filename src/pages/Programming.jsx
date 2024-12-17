@@ -1,7 +1,7 @@
 import MainLayout from "../components/MainLayout";
 
 function Programming() {
-  const query = "programming";
+  const query = "Programmer";
   return (
     <>
       <div className="container">
