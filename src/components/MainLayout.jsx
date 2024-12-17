@@ -23,7 +23,7 @@ function MainLayout({ query }) {
 
   if (isLoading) {
     return (
-      <div className="d-flex justify-content-center align-items-center mt-5">
+      <div className="d-flex justify-content-center align-items-center mt-5" style={{ height: "61.7vh" }}>
         <div className="spinner-border" role="status">
           <span className="visually-hidden">Loading...</span>
         </div>
@@ -33,16 +33,17 @@ function MainLayout({ query }) {
 
   if (isError) {
     return (
-      <div className="d-flex justify-content-center align-items-center mt-5">
+      <div className="d-flex justify-content-center align-items-center mt-5" style={{ height: "61.7vh" }}>
         <h1>Error fetching data</h1>
       </div>
     );
   }
   return (
+    // menampilkan data berita
     <>
       {data.map((item) => (
         <div key={item._id} className="col-md-6 col-lg-4 d-flex justify-content-center mb-4">
-          <div className="card border-0 shadow p-3 mb-5 mt-5" style={{ width: "18rem" }}>
+          <div className="card border-0 shadow p-3 mb-5 mt-5" style={{ width: "18rem", transition: "transform 0.3s ease" }}>
             <img src={item.multimedia?.[0]?.url ? `https://www.nytimes.com/${item.multimedia[0].url}` : image} className="card-img-top rounded" alt={item.headline.main} style={{ height: "256px", width: "100%" }} />
             <div className="card-body d-flex flex-column">
               <h5 className="card-title">{item.headline.main}</h5> {/* untuk judul berita*/}

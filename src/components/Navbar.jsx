@@ -15,11 +15,14 @@ function Navbar() {
     }
   };
   return (
+    // Navbar
     <>
       <nav className="navbar sticky-top navbar-expand-lg navbar-dark p-0">
         <div className="container">
           <Link className="navbar-brand text-white px-3 mt-2 d-flex align-items-center" to="/">
-            <h3><span>N</span>EWS</h3>
+            <h3>
+              <span>N</span>EWS
+            </h3>
           </Link>
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
@@ -57,6 +60,15 @@ function Navbar() {
         </div>
       </nav>
       <Outlet />
+
+      {/* Footer */}
+      <footer className="bg-dark text-white py-3 mt-5">
+        <div className="container text-center">
+          <p className="mb-0">
+            <strong>Copy Right &copy; {new Date().getFullYear()}. News Web By WahAbi. All Rights Reserverd.</strong>
+          </p>
+        </div>
+      </footer>
     </>
   );
 }

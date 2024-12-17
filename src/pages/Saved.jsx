@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { unsaveNews } from "../store/newsSaved";
 
 function Saved() {
-  const savedNews = useSelector((state) => state.news.data); 
+  const savedNews = useSelector((state) => state.news.data);
   const dispatch = useDispatch();
 
   const handleDelete = (item) => {
@@ -12,7 +12,7 @@ function Saved() {
   };
 
   return (
-    <>
+    <div style={{ minHeight: "77.2vh" }}>
       <div className="container">
         <div className="d-flex justify-content-center my-3 text-uppercase">
           <h1>List Saved</h1>
@@ -56,7 +56,7 @@ function Saved() {
           </tbody>
         </table>
       </div>
-    </>
+    </div>
   );
 }
 
