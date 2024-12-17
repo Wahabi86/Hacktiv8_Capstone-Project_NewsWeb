@@ -17,15 +17,15 @@ const App = createBrowserRouter([
         element: <Indonesia />,
       },
       {
-        path: "/programming",
+        path: "programming",
         element: <Programming />,
       },
       {
-        path: "/saved",
+        path: "saved",
         element: <Saved />,
       },
       {
-        path: "/search/:query",
+        path: "search/:query",
         element: <Search />,
       },
     ],
