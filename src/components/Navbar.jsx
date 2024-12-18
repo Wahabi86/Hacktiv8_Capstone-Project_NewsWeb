@@ -60,7 +60,7 @@ function Navbar() {
       <footer className="bg-dark text-white py-3 mt-5">
         <div className="container text-center">
           <p className="mb-0">
-            <strong>Copy Right &copy; {new Date().getFullYear()}. News Web By WahAbi. All Rights Reserverd.</strong>
+            <strong>Copy Right &copy; 2024. News Web By WahAbi. All Rights Reserverd.</strong>
           </p>
         </div>
       </footer>
