@@ -1,22 +1,15 @@
 const SAVE_NEWS = "SAVE_NEWS";
 const UNSAVE_NEWS = "UNSAVE_NEWS";
 
-export const saveNews = (newsItem) => {
-  return (dispatch) => {
-    dispatch({
-      type: SAVE_NEWS,
-      payload: newsItem,
-    });
-  };
-};
-export const unsaveNews = (newsItem) => {
-  return (dispatch) => {
-    dispatch({
-      type: UNSAVE_NEWS,
-      payload: newsItem._id,
-    });
-  };
-};
+export const saveNews = (newsItem) => ({
+  type: SAVE_NEWS,
+  payload: newsItem,
+});
+
+export const unsaveNews = (newsItem) => ({
+  type: UNSAVE_NEWS,
+  payload: newsItem._id,
+});
 
 const initialState = {
   data: [],
