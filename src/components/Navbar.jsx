@@ -11,7 +11,6 @@ function Navbar() {
     e.preventDefault(); // mencegah halaman relod setelah melakukan searching
     if (searchNews.trim()) {
       navigate(`/search/${encodeURIComponent(searchNews)}`);
-      setSearchNews(""); // untuk mengosongkan search setelah melakukan searching
     }
   };
   return (
